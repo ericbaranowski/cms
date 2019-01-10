@@ -1,0 +1,31 @@
+{{ partial "header" . }}
+
+<div id="data" data-slug="{{ .File.TranslationBaseName }}" data-api="{{ .Site.Data.api.recipe.get_ingredients }}"></div>
+
+<div class="row marketing">
+  <div class="col">
+      <h1>{{ .Title }}</h1>
+      <p>{{ $.Param "description" }}</p>
+      <img src="{{ $.Param "image.url" }}" class="img-fluid" alt="{{ $.Param "image.text" }}" />
+
+      <div id="measurements">
+        <span>Display measurements in:</span>
+        <select id="system">
+          <option value="metric">Metric System</option>
+          <option value="imperial">Imperial System</option>
+        </select>
+      </div>
+
+      <h2>Ingredients</h2>
+      <ul id="metric" class="ingredients">
+        {{ range $.Param "ingredients" }}
+          <li>{{ .ingredient.amount }} {{ .ingredient.unit }} {{ .ingredient.name }}</li>
+        {{ end }}
+      </ul>
+      <ul id="imperial" class="ingredients"></ul>
+
+      {{ .Content | markdownify }}
+  </div>
+</div>
+
+{{ partial "footer" . }}

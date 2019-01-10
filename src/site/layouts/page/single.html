@@ -1,0 +1,9 @@
+{{ partial "header" . }}
+
+<div class="row marketing">
+  <div class="col">
+    {{ .Content | markdownify }}
+  </div>
+</div>
+
+{{ partial "footer" . }}

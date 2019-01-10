@@ -1,0 +1,5 @@
+[recipe]
+get_ingredients = "https://jamstack.azurewebsites.net/api/Ingredients/"
+
+[submit]
+post_recipe = "https://jamstack.azurewebsites.net/api/Recipe"

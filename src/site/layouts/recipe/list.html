@@ -1,0 +1,11 @@
+{{ partial "header" . }}
+
+<div class="row marketing">
+  <div class="col">
+		{{ range .Data.Pages }}
+			{{ partial "summary" . }}
+		{{ end }}
+  </div>
+</div>
+
+{{ partial "footer" . }}

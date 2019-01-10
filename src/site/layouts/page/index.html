@@ -1,0 +1,15 @@
+{{ partial "header" . }}
+
+<div class="jumbotron">
+  {{ .Content | markdownify }}
+</div>
+
+<div class="row marketing">
+  <div class="col">
+    {{ range where .Site.Pages.ByTitle ".Params.layout" "recipe" }}
+      {{ partial "summary" . }}
+    {{ end }}
+  </div>
+</div>
+
+{{ partial "footer" . }}

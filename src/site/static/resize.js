@@ -1,0 +1,1 @@
+window.ub = {"page":{"id":"3d7ce320-ff1a-4f51-b272-5a861c50ec77","variantId":"b","usedAs":"main","name":"storefrontcloud.io","url":"http://www.storefrontcloud.io/","dimensions":{"desktop":{"height":9974,"width":1240},"mobile":{"height":14793,"width":320},"mobileMaxWidth":600},"appendParamsElementIds":[]}};

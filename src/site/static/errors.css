@@ -1,0 +1,16 @@
+  /*Error text styling*/
+  .hs-error-msgs {
+	float: right !important;
+    font-family: inherit !important;
+    position: absolute !important;
+  }
+  .hs-error-msgs label {
+    color: red !important; 
+    font-size: .5em !important;   
+	text-align: right !important;
+	padding-right: 22px !important;
+  }
+  /*Error field styling */
+  .error {
+    border: 1px solid red !important;
+  }
